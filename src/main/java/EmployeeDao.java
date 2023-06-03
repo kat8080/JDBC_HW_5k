@@ -1,9 +1,8 @@
-import java.sql.PreparedStatement;
 import java.util.List;
 
 public interface EmployeeDao {
 
-    void add(Employee employee);
+    Integer add(Employee employee);
 
     Employee getById(int id);
 
@@ -11,5 +10,5 @@ public interface EmployeeDao {
 
     void updateEmployee(int id, Employee employee);
 
-    void deleteEmployee(int id);
+    void deleteEmployee(Employee employee);
 }
